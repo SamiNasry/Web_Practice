@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIZZBUZZ GAME</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height : 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="Input">
+        <form id="fizzform">
+            <input type="text" id="numberinput">
+            <button type="submit">Run</button>
+        </form>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const form = document.getElementById('fizzform');
+        const input = document.getElementById('numberinput');
+        const output = document.getElementById('output');
+
+        // Event Listeners
+        form.addEventListener('submit', function(event) { 
+            event.preventDefault();
+            const userInput = parseInt(input.value, 10);
+            if(isNaN(userInput) || userInput <= 0) {
+                output.textContent = 'Please enter a valid positive number.';
+                return;
+            }
+        output.innerHTML = ''; 
+
+        for(let i = 1; i <= userInput; i++) {
+            if (i % 3 == 0 && i % 5 == 0)
+        {
+            output.innerHTML += '<div>FizzBuzz</div>';
+        } else if (i % 3 == 0)
+        {
+            output.innerHTML += '<div>Fizz</div>';
+        } else if ( i % 5 == 0)  {
+            output.innerHTML += '<div>Buzz</div>';
+        } else {
+            output.innerHTML += `<div>${i}</div>`;
+        }
+        }
+
+        input.value = '';
+    });
+
+        
+    </script>
+    
+</body>
+</html>
