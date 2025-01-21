@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPERS SCISSORS</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="Player 1">
+        <form id="buttons1">
+            <button type="submit" value="ROCK">ROCK</button>
+            <button type="submit" value="PAPER">PAPER</button>
+            <button type="submit" value="SCISSORS">SCISSORS</button>
+        </form>
+        <h3>Player 1</h3>
+        
+    </div>
+
+    <div class="Player 2">
+
+        <h3>Player 2</h3>
+        <form id="buttons2">
+            <button type="submit" value="ROCK">ROCK</button>
+            <button type="submit" value="PAPER">PAPER</button>
+            <button type="submit" value="SCISSORS">SCISSORS</button>
+        </form>
+    </div>
+
+    <script>
+        const form1 = document.getElementById('buttons1'); 
+        const form2 = document.getElementById('buttons2');
+        
+        form1.addEventListener("click", function(event) {
+            event.preventDefault();
+            const choice = event.target.value; 
+        })
+    </script>
+</body>
+</html>
