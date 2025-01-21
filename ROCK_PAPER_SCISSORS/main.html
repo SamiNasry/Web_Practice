@@ -26,7 +26,8 @@
 <body>
     <div class="Player 1">
         <form id="buttons1">
-            <button type="submit" value="ROCK">ROCK</button>
+            <div id="Choice1"></div>
+           <button type="submit" value="ROCK">ROCK</button>
             <button type="submit" value="PAPER">PAPER</button>
             <button type="submit" value="SCISSORS">SCISSORS</button>
         </form>
@@ -42,15 +43,25 @@
             <button type="submit" value="PAPER">PAPER</button>
             <button type="submit" value="SCISSORS">SCISSORS</button>
         </form>
+        <div id="Choice2"></div>
     </div>
 
     <script>
         const form1 = document.getElementById('buttons1'); 
         const form2 = document.getElementById('buttons2');
+        const choice1 = document.getElementById("Choice1");
+        const choice2 =  document.getElementById("Choice2");
         
         form1.addEventListener("click", function(event) {
             event.preventDefault();
-            const choice = event.target.value; 
+            const p1 = event.target.value; 
+            choice1.innerHTML= `<div>${p1}</div>`;
+        })
+
+        form2.addEventListener("click", function(event) {
+            event.preventDefault();
+            const p2 = event.target.value;
+            choice2.innerHTML = `<div>${p2}</div>`;
         })
     </script>
 </body>
