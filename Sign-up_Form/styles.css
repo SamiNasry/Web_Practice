@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Main{
+    display: flex;
+    width: 100%;
+}
+
+#Left_Side{
+    background: url("space.jpg") no-repeat center center/cover;
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: "Italianno";
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Right_Side{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("space2.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message{
+    font-size: 2rem;
+    margin-bottom: 60px;
+    font-family: "Italianno";
+    
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input-group div{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-gorup div:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background: #121311;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
