@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Library</title>
+    
     <style>
         .header{
             display: flex;
@@ -13,7 +14,13 @@
             padding : 0;
             border: 0;
         }
-        .books {
+        td, th{
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 8px;
+        }
+        table{
+            margin : 20px;
             
         }
     </style>
@@ -24,7 +31,14 @@
     </div>
     
     <div class="books">
-
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Pages</th>
+            </tr>
+            
+        </table>
     </div>
     <div class="add">
      <div class="btn">
@@ -42,6 +56,6 @@
         </form>
     </div> ----> 
   
-    
+    <script src="script.js"> </script>
 </body>
 </html>
