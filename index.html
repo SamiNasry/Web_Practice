@@ -3,50 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
     <title>Web Practice</title>
     <style>
         *{
-            margin: 10px;
+            margin : 0px;
+            padding : 0px;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
         }
         body{
             display: flex;
-            flex-direction: row;
-            background-color: rgb(0, 0, 0);
-        }
-        .FIZZBUZZ {
-            height: 200px;
-            width : 200px;
-            background-color: rgb(86, 117, 117);
-            box-shadow: 0 2px 4px rgb(177, 166, 166);
-            color: white;
-            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-        
+            min-height: 100vh;
+            background-color: #121212;
+            font-family: "DM Serif Text", serif;
+            color: white;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
         }
 
-        .RPS{
-            height: 200px;
-            width : 200px;
-            background-color: rgb(56, 8, 145);
-            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-            color: white;
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap : 20px;
+            justify-content: center;
+        }
+
+        .Card {
+            width: 220px;
+            height: 220px;
+            background: linear-gradient(135deg, #444, #222);
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+            transition: transform 0.3 ease-in-out, box-shadow 0.3s ease-in-out;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
         }
+        .Card:hover {
+            transform:  scale(1.05);
+            box-shadow: 0 6px 15px rgba(255,255,255,0.2);
+        }
+        
         
     </style>
 </head>
 <body>
-    <a class="FIZZBUZZ" href="./FIZZBUZZ/main.html" >
-        <p>FIZZBUZZ</p>
-    </a>
-    <a class="RPS" href="./ROCK_PAPER_SCISSORS/index.html">
-        <p>ROCK PAPER SCISSORS</p>
-    </a>
-    <a class="Signup" href="./Sign-up_Form/index.html">
-        <p>Sign up form</p>
-    </a>
+    <h1>Project under TheOdin</h1>
+    <div class="projects">
+        <a class="Card" href="./FIZZBUZZ/main.html" >
+            <p>FIZZBUZZ</p>
+        </a>
+        <a class="Card" href="./ROCK_PAPER_SCISSORS/index.html">
+            <p>ROCK PAPER SCISSORS</p>
+        </a>
+        <a class="Card" href="./Sign-up_Form/index.html">
+            <p>Sign up form</p>
+        </a>
+        <a class="Card" href="./Javascript_Practice/Library/index.html">
+            <p>Library</p>
+        </a>
+    </div>
+    
 </body>
 </html>
