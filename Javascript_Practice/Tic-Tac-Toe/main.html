@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: rgb(161, 161, 36);
+            
+        }
+        .game{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            
+           
+        }
+        div div{
+           
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+        div div div{
+            background-color: rgb(255, 255, 255);
+            border: 0.1px solid black;
+            height: 200px;
+            width: 200px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="game">
+        <h2>HELLO</h2>
+        <div id="row1">
+           <div class="square" value="1"></div>
+           <div class="square" value="2"></div>
+           <div class="square" value="3"></div>
+        </div>
+        <div id="row2">
+            <div class="square" value="4"></div>
+            <div class="square" value="5"></div>
+            <div class="square" value="6"></div>
+        </div>
+        <div id="row3">
+            <div class="square" value="7"></div>
+            <div class="square" value="8"></div>
+            <div class="square" value="9"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
