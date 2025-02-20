@@ -36,26 +36,33 @@
             color: white;
             cursor: pointer;
         }
+        .square{
+            display: flex;
+            color: black;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     
     <div class="game">
         <h2>HELLO</h2>
+        <h2 id="message"></h2>
         <div id="row1">
-           <div class="square" value="1"></div>
-           <div class="square" value="2"></div>
-           <div class="square" value="3"></div>
+           <div class="square" id="00" row="0" column = "0"></div>
+           <div class="square" id="01" row="0" column = "1"></div>
+           <div class="square" id="02" row="0" column = "2"></div>
         </div>
         <div id="row2">
-            <div class="square" value="4"></div>
-            <div class="square" value="5"></div>
-            <div class="square" value="6"></div>
+            <div class="square" id="10" row="1" column = "0"></div>
+            <div class="square" id="11" row="1" column = "1"></div>
+            <div class="square" id="12" row= "1" column = "2"></div>
         </div>
         <div id="row3">
-            <div class="square" value="7"></div>
-            <div class="square" value="8"></div>
-            <div class="square" value="9"></div>
+            <div class="square" id="20" row="2" column = "0"></div>
+            <div class="square" id="21" row="2" column = "1"></div>
+            <div class="square" id="22" row="2" column = "2"></div>
         </div>
     </div>
     <script src="script.js"></script>
